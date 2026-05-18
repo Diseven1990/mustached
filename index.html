@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Mustached</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div id="scoreLabel">SCORE</div>
+    <div id="score">0</div>
+    <div id="progressWrap"><div id="progressBar"></div></div>
+  </div>
+
+  <div id="gameOver">
+    <section id="loseScreen" class="endScreen">
+      <div class="endCard">
+        <h1>Falhaste, D.</h1>
+        <img src="assets/player/ko.webp" alt="" class="endCharacter">
+        <div class="endScore">SCORE <strong id="loseScore">0</strong></div>
+        <button id="retryBtn" class="btn secondary">Tenta de novo</button>
+        <button id="loseCta" class="btn primary">O jogo começa agora →</button>
+      </div>
+    </section>
+
+    <section id="winScreen" class="endScreen">
+      <div class="endCard winCard">
+        <h1>O tutorial terminou.</h1>
+        <img src="assets/player/win.webp" alt="" class="endCharacter winCharacter">
+        <button id="winCta" class="btn primary big">O jogo começa agora →</button>
+      </div>
+    </section>
+  </div>
+
+  <audio id="jumpSound" src="assets/sounds/jump.mp3" preload="auto"></audio>
+  <audio id="hitSound" src="assets/sounds/hit.mp3" preload="auto"></audio>
+  <audio id="closeSound" src="assets/sounds/close.mp3" preload="auto"></audio>
+
+  <script src="game.js" defer></script>
+</body>
+</html>
