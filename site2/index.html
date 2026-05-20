@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Mustached</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game" width="390" height="844"></canvas>
+
+  <div id="overlay">
+    <section id="lose" class="panel">
+      <h1>Recomeça o nível.</h1>
+      <img src="assets/player/ko.webp" alt="" class="panelChar">
+      <div class="panelScore">SCORE <strong id="loseScore">0</strong></div>
+      <button id="retry">Tenta de novo</button>
+      <button id="loseCta">DETALHES DO CURSO →</button>
+    </section>
+
+    <section id="win" class="panel">
+      <h1>TUTORIAL COMPLETO</h1>
+      <img src="assets/player/win.webp" alt="" class="panelChar winChar">
+      <h2 class="readyText">READY PLAYER ONE?</h2><button id="winCta">DETALHES DO CURSO →</button>
+    </section>
+
+    
+    <section id="quizCountdown" class="panel quizPanel">
+      <div class="quizMeta">QUIZ FINAL</div>
+      <h1>Estiveste atento a tudo?</h1>
+      <div class="quizSummary">
+        O quiz vai começar em...
+      </div>
+      <div id="countdownNumber" class="countdownNumber">5</div>
+    </section>
+
+<section id="quiz" class="panel quizPanel">
+      <div class="quizMeta" id="quizMeta">PERGUNTA 1/4</div>
+      <h1 id="quizQuestion">Pergunta</h1>
+      <div id="quizAnswers" class="quizAnswers"></div>
+      <div id="quizFeedback" class="quizFeedback"></div>
+    </section>
+
+    <section id="quizResult" class="panel quizPanel">
+      <h1 id="quizResultTitle">Resultado</h1>
+      <img id="quizResultImg" src="assets/player/win.webp" alt="" class="panelChar winChar">
+      <div class="quizSummary" id="quizSummary"></div>
+      <button id="quizRetry">TENTAR DE NOVO</button>
+      <button id="quizCta">DETALHES DO CURSO →</button>
+    </section>
+
+  </div>
+
+  <script src="game.js" defer></script>
+</body>
+</html>
