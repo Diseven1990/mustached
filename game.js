@@ -284,8 +284,8 @@ function loop(ts){
 
 addEventListener('pointerdown', input, {passive:false});
 retry.addEventListener('click', e => { e.stopPropagation(); restart(); });
-loseCta.addEventListener('click', e => { e.stopPropagation(); location.href='https://www.masterd.pt/'; });
-winCta.addEventListener('click', e => { e.stopPropagation(); location.href='https://www.masterd.pt/'; });
+loseCta.addEventListener('click', e => { e.stopPropagation(); location.href='https://www.masterd.pt/cursos-videojogos/'; });
+winCta.addEventListener('click', e => { e.stopPropagation(); location.href='https://www.masterd.pt/cursos-videojogos/'; });
 
 requestAnimationFrame(loop);
 })();
